@@ -1,0 +1,14 @@
+
+FROM node:20
+WORKDIR /spielendical
+COPY package*.json ./
+RUN npm install
+COPY src src
+COPY config config
+COPY migrations migrations
+COPY models models
+COPY seeders seeders
+COPY .env .env
+COPY start.sh start.sh
+EXPOSE 3000
+CMD [ "bash", "start.sh" ]

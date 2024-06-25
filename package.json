@@ -1,0 +1,21 @@
+{
+  "name": "spielendical",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node .",
+    "migrate": "sequelize-cli db:migrate"
+  },
+  "author": "Kaylee Sachs",
+  "license": "MIT",
+  "description": "Converts the calendar at https://spiele-nd.de/kalender to an ICS file for import into other calendar applications.",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-fetch": "^2.7.0",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2",
+    "sqlite3": "^5.1.7",
+    "xml-js": "^1.6.11"
+  }
+}
